@@ -43,7 +43,7 @@ void dfaTable::constructTable(map <int, set <int> > followpos)
   	  set <int> v;                                                     // vector to contain the new states
   	  for(auto it2 = it->second.begin(); it2 != it->second.end(); it2++)   // for every number in each state
   	  {
-  	  	if(charToNum[*it2] == t)                                   // if char number matches to state number
+        if(charToNum[*it2] == t)                                   // if char number matches to state number
   	    {
   	   	  for(auto it3 = followpos[*it2].begin(); it3 != followpos[*it2].end(); it3++)
   	   	  {
