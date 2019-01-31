@@ -230,7 +230,8 @@ void traversal(node* root)
   if(root == NULL)
     return;
   char ch = root->c;
-  cout<<ch<<" ";
+  cout<<"Char '";
+  cout<<ch<<"'  ";
   if(root->left == NULL)
     cout<<" --- Left child is NULL ";
   else
